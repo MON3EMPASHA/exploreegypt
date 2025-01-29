@@ -1,0 +1,48 @@
+{
+  "PopularDestinations": [
+    {
+      "Name": "Pyramids of Giza",
+      "ShortDescription": "The last remaining wonder of the ancient world.",
+      "LongDescription": "The Pyramids of Giza, including the Great Pyramid of Khufu, are one of the most famous landmarks in the world. Built over 4,500 years ago, they showcase the grandeur of ancient Egyptian civilization and are a must-visit destination.",
+      "MainPhoto": "pyramids_main.jpg",
+      "Gallery": ["pyramids_1.jpg", "pyramids_2.jpg", "pyramids_3.jpg"]
+    },
+    {
+      "Name": "Grand Egyptian Museum",
+      "ShortDescription": "A modern museum showcasing Egypt's greatest artifacts.",
+      "LongDescription": "The Grand Egyptian Museum, set to be the largest archaeological museum in the world, houses an extensive collection of ancient Egyptian treasures, including the full collection of Tutankhamun’s belongings.",
+      "MainPhoto": "gem_main.jpg",
+      "Gallery": ["gem_1.jpg", "gem_2.jpg", "gem_3.jpg"]
+    },
+    {
+      "Name": "Cairo Citadel",
+      "ShortDescription": "A historic fortress offering stunning views of Cairo.",
+      "LongDescription": "Built by Salah al-Din in the 12th century, the Cairo Citadel is home to several important structures, including the famous Mosque of Muhammad Ali. It provides insight into medieval Islamic architecture.",
+      "MainPhoto": "cairo_citadel_main.jpg",
+      "Gallery": ["cairo_citadel_1.jpg", "cairo_citadel_2.jpg"]
+    }
+  ],
+  "UnpopularDestinations": [
+    {
+      "Name": "Hanging Church",
+      "ShortDescription": "A historic Coptic church suspended above a Roman fortress.",
+      "LongDescription": "The Hanging Church, one of Egypt’s oldest churches, is renowned for its unique architectural design and religious significance. It dates back to the 3rd century AD and is a key site for Coptic heritage.",
+      "MainPhoto": "hanging_church_main.jpg",
+      "Gallery": ["hanging_church_1.jpg", "hanging_church_2.jpg"]
+    },
+    {
+      "Name": "Prince Mohamed Ali Palace in Manial",
+      "ShortDescription": "An exquisite palace reflecting Islamic and European styles.",
+      "LongDescription": "The Manial Palace was built by Prince Mohamed Ali in the late 19th century. It features beautifully decorated halls, lush gardens, and a collection of rare manuscripts and artifacts.",
+      "MainPhoto": "manial_palace_main.jpg",
+      "Gallery": ["manial_palace_1.jpg", "manial_palace_2.jpg"]
+    },
+    {
+      "Name": "Bayt Al-Suhaymi",
+      "ShortDescription": "A well-preserved example of Ottoman-era architecture.",
+      "LongDescription": "Bayt Al-Suhaymi is a historic house in Cairo, built in the 17th century. It provides a glimpse into the lifestyle of wealthy Egyptian families during the Ottoman period.",
+      "MainPhoto": "bayt_suhaymi_main.jpg",
+      "Gallery": ["bayt_suhaymi_1.jpg", "bayt_suhaymi_2.jpg"]
+    }
+  ]
+}
