@@ -20,7 +20,7 @@
   --spanish-gray: hsl(0, 0%, 60%);
   --black-coral: hsl(225, 8%, 42%);
   --oxford-blue: hsl(208, 97%, 12%);
-  --yale-blue: hsl(214, 72%, 33%);
+  --yale-blue: #a32e03;
   --blue-ncs: hsl(48, 78%, 49%);
   --gunmetal: hsl(206, 34%, 20%);
   --gainsboro: hsl(0, 0%, 88%);
@@ -401,7 +401,30 @@ body {
   opacity: 0.7;
   pointer-events: all;
 }
+.dropdown {
+}
 
+.dropdown-menu {
+  margin-top: -15px;
+
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 140px;
+  border-radius: 5px;
+}
+
+.dropdown-menu li {
+}
+
+.dropdown-menu li a {
+  color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 /*-----------------------------------*\
  * #HERO
 \*-----------------------------------*/
