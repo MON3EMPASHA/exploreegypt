@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+      .container {
+        margin: auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .text {
+        margin-left: 40px;
+      }
+      .title {
+        color: #ff4500;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .location {
+        font-size: 16px;
+        color: #666;
+      }
+      .GalleryBooking {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+      }
+      .image-gallery {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+      }
+      .main-image {
+        margin-bottom: 10px;
+        height: 540px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .thumbnail-container {
+        display: flex;
+        gap: 10px;
+      }
+      .thumbnail {
+        width: 92px;
+        height: 60px;
+        cursor: pointer;
+        object-fit: cover;
+        transition: transform 0.3s;
+        border-radius: 5px;
+      }
+      .thumbnail:hover {
+        transform: scale(1.1);
+      }
+      .booking-form {
+        background: white;
+        border-radius: 10px;
+        margin-top: 20px;
+        flex-grow: 1;
+        width: 10%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.212);
+        display: flex;
+        flex-direction: column;
+      }
+      .booking-form label {
+        display: block;
+        margin-top: 10px;
+      }
+      .booking-form input,
+      .booking-form select {
+        width: 90%;
+        padding: 8px;
+        height: 30px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f3f0f0ce;
+      }
+      .price {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        margin-top: 10px;
+      }
+      .subtotal {
+        color: #ff4500;
+        font-size: 28px;
+        font-weight: 900;
+        padding-top: 0px;
+      }
+      .btn {
+        background-color: #ff5722;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 20px;
+        height: 50px;
+      }
+      .btn:hover {
+        background-color: #e64a19;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h1 class="title">
+          Classic Double Decker Bus Tour and Nile River Cruise
+        </h1>
+        <p class="location">📍 Cairo | ⭐⭐⭐⭐⭐ (348 reviews)</p>
+      </div>
+      <div class="GalleryBooking">
+        <div class="image-gallery">
+          <figure class="card-img">
+            <img
+              src="https://ancientworldwonders.com/uploads/Pyramids_of_Giza.jpg"
+              alt="Nile Cruise"
+              class="main-image"
+              id="main-img"
+            />
+          </figure>
+          <div class="thumbnail-container">
+            <img
+              src="https://ancientworldwonders.com/uploads/Pyramids_of_Giza.jpg"
+              alt="thumb1"
+              class="thumbnail"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="https://www.ancient-origins.net/sites/default/files/field/image/How-were-the-pyramids-built.jpg"
+              alt="thumb2"
+              class="thumbnail"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="https://th.bing.com/th/id/OIF.X18zBhmP9BTHNVmfc7zKaw?w=960&h=540&rs=1&pid=ImgDetMain"
+              alt="thumb3"
+              class="thumbnail"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="https://cdn.mos.cms.futurecdn.net/3vqA3Fw4DPaz7rsvaHHcQ7.jpg"
+              alt="thumb4"
+              class="thumbnail"
+              onclick="changeImage(this)"
+            />
+          </div>
+        </div>
+
+        <div class="booking-form">
+          <h2>Booking</h2>
+          <label
+            >From: <input type="date" id="from-date" onchange="updateToDate()"
+          /></label>
+          <label>To: <input type="date" id="to-date" /></label>
+          <label
+            >No. Of Guests:
+            <input
+              type="number"
+              id="guests"
+              min="1"
+              value="1"
+              onchange="calculatePrice()"
+          /></label>
+          <class class="price">
+            <p>Subtotal</p>
+            <span class="subtotal">50 EGP</span>
+          </class>
+          <button class="btn" onclick="confirmBooking()">
+            Confirm Booking
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function confirmBooking() {
+        alert("Your booking has been confirmed!");
+      }
+
+      function changeImage(element) {
+        document.getElementById("main-img").src = element.src;
+      }
+
+      function updateToDate() {
+        let fromDate = document.getElementById("from-date").value;
+        document.getElementById("to-date").min = fromDate;
+      }
+
+      function calculatePrice() {
+        let guests = document.getElementById("guests").value;
+        let basePrice = 50; // Base price per guest
+        document.getElementById("subtotal").textContent = guests * basePrice;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Egypt</title>
+    <link rel="stylesheet" href="./Destination.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons for icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body id="top">
+    <div class="all">
+      <header class="header" data-header>
+        <nav class="navbarr" data-navbar>
+          <div class="navbarr-top">
+            <a href="#" class="logo">
+              <img src="../assets/images/logooo.png" alt="Explore Egypt logo" />
+            </a>
+
+            <ul class="navbar-list">
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+              <li><a href="#" class="navbar-link" data-nav-link>Tours</a></li>
+              <li class="dropdown">
+                <a href="#" class="navbar-link" data-nav-link>Services</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#hotels" class="navbar-link" data-nav-link
+                      >Hotels</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#destination" class="navbar-link" data-nav-link
+                      >Destination</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#package" class="navbar-link" data-nav-link
+                      >Packages</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>Reviews</a>
+              </li>
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="navbar-icons">
+              <a href="#" class="icon-link">
+                <img src="../assets/images/search.png" alt="Search Icon" />
+              </a>
+              <a href="#" class="icon-link">
+                <img src="../assets/images/grid.png" alt="Grid Icon" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="one">
+          <div class="container">
+            <h1 class="title">
+              Classic Double Decker Bus Tour and Nile River Cruise
+            </h1>
+            <p class="location">📍 Cairo | ⭐⭐⭐⭐⭐ (348 reviews)</p>
+
+            <div class="image-gallery">
+              <img
+                src="https://ancientworldwonders.com/uploads/Pyramids_of_Giza.jpg"
+                alt="Nile Cruise"
+                class="main-image"
+              />
+              <div class="thumbnail-container">
+                <img src="thumb1.jpg" alt="thumb1" class="thumbnail" />
+                <img src="thumb2.jpg" alt="thumb2" class="thumbnail" />
+                <img src="thumb3.jpg" alt="thumb3" class="thumbnail" />
+              </div>
+            </div>
+
+            <div class="booking-form">
+              <h2>Booking</h2>
+              <label>From: <input type="date" id="from-date" /></label>
+              <label>To: <input type="date" id="to-date" /></label>
+              <label
+                >No. Of Guests:
+                <select id="guests">
+                  <option value="1">1 adult</option>
+                  <option value="2" selected>2 adults</option>
+                  <option value="3">3 adults</option>
+                </select>
+              </label>
+              <p class="price">Subtotal: <span id="subtotal">50</span> EGP</p>
+              <button id="confirm-booking">Confirm Booking</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="footer-brand">
+              <a href="#" class="logo">
+                <img src="../assets/images/logo.png" alt="Explore Egypt logo" />
+              </a>
+              <p class="footer-text">
+                Urna ratione ante harum provident, eleifend, vulputate molestiae
+                proin fringilla, praesentium magna conubia at perferendis,
+                pretium, aenean aut ultrices.
+              </p>
+            </div>
+
+            <div class="footer-contact">
+              <h4 class="contact-title">Contact Us</h4>
+              <p class="contact-text">Feel free to contact and reach us !!</p>
+
+              <ul>
+                <li class="contact-item">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <a href="tel:+01123456790" class="contact-link"
+                    >+01 (123) 4567 90</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <a href="mailto:info.ExploreEgypt.com" class="contact-link"
+                    >info.ExploreEgypt.com</a
+                  >
+                </li>
+                <li class="contact-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <address>InnovEgypt-G3</address>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-form">
+              <p class="form-text">
+                Subscribe to our newsletter for more updates & news !!
+              </p>
+              <form action="" class="form-wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  class="input-field"
+                  placeholder="Enter Your Email"
+                  required
+                />
+                <button type="submit" class="btn btn-secondary">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="copyright">
+              &copy; 2025 <a href="#">InnovEgypt-G3</a>. All rights reserved
+            </p>
+            <ul class="footer-bottom-list">
+              <li><a href="#" class="footer-bottom-link">Privacy Policy</a></li>
+              <li>
+                <a href="#" class="footer-bottom-link">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="footer-bottom-link">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts (Moved outside extra divs) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./Destination.js" defer></script>
+  </body>
+</html>
